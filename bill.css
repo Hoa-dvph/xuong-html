@@ -1,0 +1,293 @@
+.bill .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bill .left-column,
+.bill .right-column {
+  flex: 1 1 50%;
+}
+
+.bill .left-column {
+  padding-right: 20px; /* Để tạo khoảng cách giữa hai cột */
+}
+
+.bill .right-column {
+  padding-left: 20px; /* Để tạo khoảng cách giữa hai cột */
+}
+
+.bill label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bill input[type="text"],
+.bill select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.bill select {
+  height: 40px;
+}
+
+.bill table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.bill th,
+.bill td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.bill th {
+  background-color: #f2f2f2;
+}
+
+.bill p strong {
+  margin-right: 5px;
+}
+
+.bill form {
+  margin-bottom: 20px;
+}
+
+.bill h3 {
+  margin-bottom: 10px;
+}
+
+.bill button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.bill button:hover {
+  background-color: #45a049;
+}
+
+
+
+/* General styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1268px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Header */
+.header-inner {
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-inner > * {
+  flex: 1;
+}
+
+.header-items {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .header-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.header-items > * {
+  margin-left: 37px;
+}
+
+.button-mobile {
+  text-align: right;
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .button-mobile {
+    display: none;
+  }
+}
+
+.main-menu {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .main-menu {
+    display: block;
+  }
+}
+
+.main-menu__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  .main-menu__list {
+    display: flex;
+  }
+}
+
+.main-menu__item {}
+
+.main-menu__link {
+  font-size: 18px;
+  display: block;
+  padding: 10px 35px;
+  text-decoration: none;
+  color: #000;
+}
+
+.main-menu__link:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  padding: 39px 0;
+}
+
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .footer-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer__address {
+  color: #9f9f9f;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.footer__title {
+  font-size: 16px;
+  color: #9f9f9f;
+  font-weight: normal;
+  margin-bottom: 59px;
+}
+
+.footer-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu-item {
+  margin-bottom: 20px;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.newsletter__input {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #000;
+  padding: 5px 10px;
+}
+
+.newsletter__input:focus {
+  outline: none;
+}
+
+.newsletter__btn {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #000;
+  padding: 5px 10px;
+  background: none;
+  cursor: pointer;
+}
+
+/* Services */
+.service-list {
+  background: #faf3ea;
+  padding: 10% 15px 10% 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .service-list {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 107px 10% 93px 10%;
+  }
+}
+
+.service-item {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .service-item {
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-gap: 10px;
+    text-align: left;
+  }
+}
+
+.service__name {
+  font-size: 25px;
+  color: #242424;
+  margin: 0;
+}
+
+.service__description {
+  color: #898989;
+  margin-top: 10px;
+}
+
+/* Banner */
+.banner {
+  margin-bottom: 17px;
+}
+
+.banner__img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}

@@ -1,0 +1,170 @@
+.detail {
+display: flex;
+align-items: flex-start;
+}
+
+.detail-left {
+display: flex;
+flex-direction: column;
+margin-right: 20px;
+/* Thêm khoảng cách bên phải */
+}
+
+.product-main-image {
+flex: 1;
+}
+
+.detail-right {
+margin-left: 20px;
+}
+
+.product-thumbnails {
+display: flex;
+flex-direction: column;
+}
+
+.product-thumbnail {
+margin-bottom: 10px;
+margin-top: 30px;
+margin-left: 15px;
+padding-right: 20px;
+}
+
+.product-title {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.product-price {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.product-rating {
+margin-bottom: 10px;
+}
+
+.product-rating .stars {
+color: gold;
+margin-right: 5px;
+}
+
+.product-description {
+margin-bottom: 20px;
+line-height: 1.5;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.product-options {
+margin-bottom: 10px;
+}
+
+.product-options label {
+display: block;
+margin-top: 7px;
+margin-bottom: 5px;
+}
+
+.product-quantity {
+display: flex;
+/* Hiển thị số lượng, Add to Cart và Compare cùng một hàng */
+align-items: center;
+/* Căn giữa theo chiều dọc */
+margin-bottom: 20px;
+}
+
+.product-quantity button {
+padding: 5px 10px;
+}
+
+.quantity-input {
+width: 40px;
+height: 29.2px;
+margin: 0 5px;
+/* Thêm khoảng cách giữa ô số lượng và nút +/- */
+}
+
+.btn-add-to-cart,
+.btn-compare {
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+margin-right: 10px;
+}
+
+.btn-compare {
+background-color: #2196F3;
+}
+
+.product-meta {
+margin-bottom: 20px;
+}
+
+.product-meta .sku,
+.product-meta .category {
+display: block;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+css Copier .tags {
+margin-top: 10px;
+}
+
+.tags .tag {
+display: inline-block;
+margin-right: 5px;
+text-decoration: none;
+color: #000;
+/* Màu văn bản */
+}
+
+.tags .tag:hover {
+text-decoration: underline;
+/* Bỏ gạch chân khi di chuột vào */
+color: #ff0000;
+/* Màu văn bản khi di chuột vào */
+}
+
+.color-options {
+display: flex;
+margin-bottom: 10px;
+/* Giảm khoảng cách */
+}
+
+.color-option {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.size-options {
+display: flex;
+}
+
+.size-option {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50px;
+height: 30px;
+border: 1px solid #000;
+margin-right: 10px;
+cursor: pointer;
+background-color: #ccc;
+/* Màu nền mặc định */
+}
+
+.size-option:hover {
+background-color: #ff0000;
+/* Đổi màu khi di chuột vào */
+color: #fff;
+/* Màu văn bản khi di chuột vào */
+}
